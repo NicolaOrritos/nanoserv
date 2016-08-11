@@ -1,0 +1,11 @@
+{
+  "name": "nanoserv",
+  "version": "0.0.1",
+  "description": "Atomic routes serving",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "author": "Nicola Orritos",
+  "license": "MIT"
+}
