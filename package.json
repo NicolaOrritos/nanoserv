@@ -2,10 +2,28 @@
   "name": "nanoserv",
   "version": "0.0.1",
   "description": "Atomic routes serving",
+  "repository": "NicolaOrritos/nanoserv",
+  "files": [
+    "lib",
+    "index.js"
+  ],
   "main": "index.js",
   "scripts": {
-    "test": "test"
+    "pretest": "npm run compile",
+    "prepublish": "npm run compile",
+    "compile": "coffee --compile --output lib/ src/",
+    "build": "npm run compile"
   },
-  "author": "Nicola Orritos",
-  "license": "MIT"
+  "author": {
+    "name": "Nicola Orritos",
+    "email": "nicola.orritos@gmail.com",
+    "url": "nicolaorritos.github.io"
+  },
+  "license": "MIT",
+  "dependencies": {
+      "restify": "^4.0.4"
+  },
+  "devDependencies": {
+    "coffee-script": "^1.10.0"
+  }
 }
